@@ -1,0 +1,46 @@
+.our-client {
+ background-color: $blue-04;
+ color: #fff;
+ border-top-left-radius: 200px;
+ display: flex;
+ justify-content: center;
+}
+
+.our-client__info {
+    display: flex;
+    align-items: start;
+    gap: 97px;
+    margin-top: 97px;
+}
+.our-client__subtitle {
+    max-width: 540px;
+    min-height: 80px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 5%;
+    opacity: 0.6;
+}
+
+.our-client__grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.our-client__item {
+    color: $gray-06;
+    padding: 41px 46px;
+    font-size: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    
+    // Убираем правую границу у последних в каждой строке
+    &:nth-child(4n) { // 4, 8, 12, 16... (каждый 4-й)
+        border-right: none;
+    }
+    
+    // Убираем нижнюю границу у всех элементов последней строки
+    &:nth-last-child(-n+4) { // Последние 4 элемента
+        border-bottom: none;
+    }
+}
