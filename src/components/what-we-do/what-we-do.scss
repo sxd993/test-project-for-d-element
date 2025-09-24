@@ -1,5 +1,5 @@
 .what-we-do-section {
-  margin: 192px 0 220px 0;
+  margin: 192px 0 220px;
   background-color: #fff;
 }
 
@@ -13,7 +13,6 @@
   justify-self: center;
 }
 
-/* Заголовок */
 .what-we-do__info {
   grid-column: 1;
   grid-row: 1;
@@ -25,52 +24,46 @@
   line-height: 46px;
   color: $blue-02;
   letter-spacing: 5%;
-
 }
 
-/* Карточка 1 */
+.what-we-do__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: $shadow-01;
+  gap: 8px;
+  max-width: 380px;
+  min-height: 525px;
+}
+
 .what-we-do__card--highlight {
   grid-column: 2;
-  grid-row: 1/2;
+  grid-row: 1 / 2;
 }
 
-/* Карточка 2 */
 .what-we-do__card--left {
   grid-column: 1;
   grid-row: 2;
   transform: translateY(-50%);
 }
 
-/* Карточка 3 */
 .what-we-do__card--right {
   grid-column: 2;
   grid-row: 2;
-    transform: translateY(20%);
+  transform: translateY(20%);
 }
-
-.what-we-do__card {
-display: flex;
-justify-content: center;
-align-items: center;
-  background: #fff;
-  border-radius: 20px;
-  padding: 40px 30px;
-  box-shadow: $shadow-01;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  max-width: 380px;
-  min-height: 525px;
-}
-
 
 .what-we-do__card--info {
   display: flex;
   flex-direction: column;
 }
+
 .what-we-do__card-title {
   width: 100%;
-  gap: 0;
   font-size: 18px;
   font-weight: 600;
   color: #002147;
@@ -90,18 +83,16 @@ align-items: center;
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* Планшетная адаптация */
+@media (max-width: 1024px) {
   .what-we-do__container {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 30px;
-    max-width: 90%;
-    padding: 0 10px;
+      min-width: auto;
   }
 
   .what-we-do__info {
-    grid-column: auto;
-    grid-row: auto;
     text-align: center;
   }
 
@@ -114,14 +105,30 @@ align-items: center;
     max-width: 100%;
     min-height: auto;
   }
+}
 
-  .what-we-do__card {
-    padding: 30px 20px;
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .what-we-do-section {
+    margin: 120px 0 150px;
+  }
+
+  .what-we-do__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    max-width: 95%;
+    min-width: auto;
   }
 
   .what-we-do__title {
     font-size: 28px;
     line-height: 36px;
     letter-spacing: normal;
+  }
+
+  .what-we-do__card {
+    padding: 30px 20px;
   }
 }

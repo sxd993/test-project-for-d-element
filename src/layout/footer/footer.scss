@@ -52,18 +52,11 @@ min-width: 1000px;
 }
 
 
-/* Кнопка */
 .footer__cta--button button {
   padding: 15px 74px;
 }
-.footer__line {
-    width: 100%;
-    background-color: #fff;
-    height: 1px;
-}
 /* Нижняя часть футера */
 .footer__bottom {
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -71,6 +64,7 @@ min-width: 1000px;
 }
 
 .footer__line {
+  position: absolute;
   top: 180px;              
   left: 0;               
   right: auto;
@@ -79,9 +73,13 @@ min-width: 1000px;
   background-color: #fff;
   z-index: 1;
   height: 1px;
+  top: 60%; 
+  left: 0;
+  height: 1px;
+  background-color: #fff;
+  z-index: 0;
 }
 
-/* линия до кнопки */
 .footer__line::after {
   content: "";
   display: block;
@@ -142,12 +140,39 @@ min-width: 1000px;
   color: rgba(255, 255, 255, 0.4);
 }
 
+.footer-wrapper {
+  position: relative;
+}
+
+.footer__top {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
 /* Адаптив */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
+  .footer__top {
+    flex-direction: column;
+    min-width: auto;
+    padding: 20px 0;
+  }
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 40px;
     max-width: 90%;
+  }
+  
+  .footer__line {
+    display: none;
+  }
+  .footer__bottom {
+    min-width: 80%;   
+    border-top: 1px solid #fff;
   }
 }
 
@@ -165,10 +190,6 @@ min-width: 1000px;
   .footer__info--title {
     font-size: 28px;
     line-height: 36px;
-  }
-
-  .footer__line {
-    width: 100%;
   }
 
   .footer__bottom {

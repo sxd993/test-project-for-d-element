@@ -6,3 +6,4 @@ import "../main.scss";
 import "../components/modal/modal";
 import "../components/form/form.ts";
 import "../utils/validator";
+import '../utils/line.ts'
