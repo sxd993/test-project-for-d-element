@@ -8,9 +8,10 @@
 
 .our-client__info {
     display: flex;
+    justify-content: center;
     align-items: start;
     gap: 97px;
-    margin-top: 97px;
+    margin: 97px auto 100px auto;
 }
 .our-client__subtitle {
     max-width: 540px;
@@ -25,6 +26,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    text-align: center;
 }
 
 .our-client__item {
@@ -34,13 +36,16 @@
     border-right: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     
-    // Убираем правую границу у последних в каждой строке
-    &:nth-child(4n) { // 4, 8, 12, 16... (каждый 4-й)
+
+    &:nth-child(4n) { // Каждый 4-й элемент
         border-right: none;
     }
     
-    // Убираем нижнюю границу у всех элементов последней строки
     &:nth-last-child(-n+4) { // Последние 4 элемента
         border-bottom: none;
+    }
+
+    &:last-child {
+        background-color: rgba(31, 63, 104, 0.2);
     }
 }

@@ -1,0 +1,120 @@
+.footer__container {
+    margin-top: 125px;
+    padding: 91px 0;
+    border-top-right-radius: 200px;
+    color: white;
+    background-color: $blue-02;
+    max-width: 95%;
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 5%;
+    max-width: 90%;
+}
+
+.footer__info {
+    margin-bottom: 5%;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer__info--title {
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 5%;
+    width: 100%;
+}
+
+.footer__info--text {
+    max-width: 460px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.footer__cta--button button {
+    padding: 15px 74px;
+}
+
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    ;
+}
+
+.footer__logo p {
+    font-size: 26px;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 50px;
+    max-width: 85%;
+    margin: auto;
+    gap: 64px;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    justify-content: center;
+
+}
+
+.footer__grid--item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+    justify-content: start;
+}
+
+.footer__item--title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 5%;
+}
+
+.footer__item--list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.footer__item--adresss,
+.footer__item--number,
+.footer__item--email {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 5%;
+    text-align: start;
+}
+
+.footer__copyright p {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 26px;
+    letter-spacing: 5%;
+}

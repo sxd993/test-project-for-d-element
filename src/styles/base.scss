@@ -2,11 +2,24 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
   color: #333;
   font-family: Gilroy;
+  background: $blue-04;
+}
+
+button {
+  cursor: pointer;
+  max-width: 220px;
+  font-family: "Gilroy", sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4%;
+  color: #fff;
+  padding: 15px 48px;
+  background-color: $blue-04;
+  border-radius: 10px;
 }
