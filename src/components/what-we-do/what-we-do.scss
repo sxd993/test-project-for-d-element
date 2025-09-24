@@ -8,9 +8,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 40px;
-  max-width: 80%;
+  min-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
   justify-self: center;
 }
 
