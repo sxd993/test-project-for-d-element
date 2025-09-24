@@ -3,7 +3,6 @@ import { closeModal } from "../modal/modal";
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("modal") as HTMLElement;
   const closeBtn = document.getElementById("closeModal") as HTMLButtonElement;
   const form = document.getElementById("contactForm") as HTMLFormElement;
 
