@@ -89,3 +89,39 @@ align-items: center;
   color: #007bff;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .what-we-do__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 90%;
+    padding: 0 10px;
+  }
+
+  .what-we-do__info {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+  }
+
+  .what-we-do__card--highlight,
+  .what-we-do__card--left,
+  .what-we-do__card--right {
+    grid-column: auto;
+    grid-row: auto;
+    transform: translateY(0);
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .what-we-do__card {
+    padding: 30px 20px;
+  }
+
+  .what-we-do__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: normal;
+  }
+}
