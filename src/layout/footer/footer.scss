@@ -127,18 +127,8 @@
 
 @media (max-width: 768px) {
     .footer {
-        border-top-right-radius: 0;
         padding-top: 50px;
         max-width: 100%;
-    }
-
-    .footer__top {
-        max-width: 100%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 32px;
-        padding: 20px 20px;
     }
 
     .footer__info {
@@ -151,6 +141,17 @@
         line-height: 36px;
     }
 
+}
+
+@media (max-width: 1024px) {
+        .footer__top {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+        padding: 20px 20px;
+    }
     .footer__grid {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -162,7 +163,8 @@
         text-align: center;
         gap: 32px;
     }
-    .footer__item--list {
+        .footer__item--list {
         align-items: start;
+        text-align: start;
     }
 }
