@@ -4,4 +4,5 @@ import '../main.scss';
 
 // Импорт логики
 import '../components/modal/modal'
-import '../components/modal/validator'
+import '../components/form/form.ts'
+import '../utils/validator'

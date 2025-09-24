@@ -197,28 +197,29 @@
   </footer>
   </div>
 
-  <!-- Modal -->
+<!-- Модалка -->
 <div class="modal-overlay" id="modal">
   <div class="modal-content">
     <button class="close-btn" id="closeModal">&times;</button>
-    <h1 class="modal__title">SEND US MESSAGE</h1>
-    <!-- Form -->
+    <h2 class="modal__title">SEND US A MESSAGE</h2>
     <form class="modal__form" id="contactForm">
-      <label>Full Name
-        <input type="text" name="name" placeholder="Your name">
+      <label>
+        Full Name
+        <input type="text" name="name" placeholder="Your name" required>
       </label>
-      <label>Email
-        <input type="email" name="email" placeholder="Your email">
+      <label>
+        Email
+        <input type="email" name="email" placeholder="Your email" required>
       </label>
-      <label>Message
-        <textarea name="message" rows="5" placeholder="Your message"></textarea>
+      <label>
+        Message
+        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
       </label>
-      <div class="modal__form--button">
       <button type="submit" class="submit-btn">Submit</button>
-      </div>
     </form>
   </div>
 </div>
+
 
   <div id="app"></div>
   <script type="module" src="./src/ts/main.ts"></script>
