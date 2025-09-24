@@ -9,10 +9,9 @@
 @import './layout/footer/footer.scss'; 
 
 // Стили для главной страницы 
-@import './components/home/hero/hero.scss'; 
-@import './components/home/what-we-do/what-we-do.scss'; 
-@import './components/home/our-client/our-client.scss'; 
+@import './components/hero/hero.scss'; 
+@import './components/what-we-do/what-we-do.scss'; 
+@import './components/our-client/our-client.scss'; 
 
 // Cтили для модального окна и формы 
 @import './components/modal/modal.scss'; 
-@import './components/form/form.scss';

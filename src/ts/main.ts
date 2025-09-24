@@ -1,2 +1,7 @@
+// Импорт стилей
 import '../main.scss';
-console.log('Стили подключены');
+
+
+// Импорт логики
+import '../components/modal/modal'
+import '../components/modal/validator'

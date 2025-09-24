@@ -1,16 +1,24 @@
-.footer__container {
-    margin-top: 125px;
-    padding: 91px 0;
-    border-top-right-radius: 200px;
+.footer-wrapper {
+    background-color: $blue-04;
+    padding-top: 90px;
+}
+
+.footer {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
     color: white;
     background-color: $blue-02;
+    border-top-right-radius: 200px;
     max-width: 95%;
 }
+
 
 .footer__top {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 50px 0;
+    justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 5%;
     max-width: 90%;
@@ -21,7 +29,7 @@
     text-wrap: wrap;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 32px;
 }
@@ -60,11 +68,9 @@
 .footer__bottom {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     padding-bottom: 50px;
-    max-width: 85%;
-    margin: auto;
     gap: 64px;
 }
 

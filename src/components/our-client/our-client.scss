@@ -4,11 +4,12 @@
  border-top-left-radius: 200px;
  display: flex;
  justify-content: center;
+ 
 }
 
 .our-client__info {
     display: flex;
-    justify-content: center;
+justify-content: flex-start;
     align-items: start;
     gap: 97px;
     margin: 97px auto 100px auto;
