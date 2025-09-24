@@ -25,7 +25,7 @@
     <div class="hero-section__container">
       <div class="hero-section__info">
         <div class="hero-section__title">
-          <p>New Automation <br/> for Your Home</p>
+          <p>New Automation <br /> for Your Home</p>
         </div>
         <p class="hero-section__subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
@@ -54,40 +54,50 @@
       <div class="what-we-do__card what-we-do__card--highlight">
         <img src="./src/assets//what-we-do/card1.svg" alt="icon" width="224" height="197" />
         <h3 class="what-we-do__card-title">
-          <br />Bring Technology To Your<br />
-          <br />Comfortable Home<br />
+          Bring Technology To Your<br />
+          Comfortable Home
         </h3>
         <p class="what-we-do__card-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="#" class="what-we-do__link">Learn more →</a>
+        <div class="what-we-do_links">
+          <a href="#" class="what-we-do__link">Learn more</a>
+          <img src="./src/assets/what-we-do/ic_arrow_forward_24px.svg" alt="">
+        </div>
+
       </div>
 
       <div class="what-we-do__card what-we-do__card--left">
         <img src="./src/assets/what-we-do/card2.svg" alt="icon" class="what-we-do__icon" />
         <h3 class="what-we-do__card-title">
-          <br />Make Your business To Be<br />
-          <br />Better Famous In Internet<br />
+          Make Your business To Be<br />
+          Better Famous In Internet
         </h3>
         <p class="what-we-do__card-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="#" class="what-we-do__link">Learn more →</a>
+        <div class="what-we-do_links">
+          <a href="#" class="what-we-do__link">Learn more</a>
+          <img src="./src/assets/what-we-do/ic_arrow_forward_24px.svg" alt="">
+        </div>
       </div>
 
       <div class="what-we-do__card what-we-do__card--right">
         <img src="./src/assets/what-we-do/card3.svg" alt="icon" class="what-we-do__icon" />
         <h3 class="what-we-do__card-title">
-          <br />Build Your Digital Product<br />
-          <br />That Suitable For Your Need<br />
+          Build Your Digital Product<br />
+          That Suitable For Your Need
         </h3>
         <p class="what-we-do__card-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="#" class="what-we-do__link">Learn more →</a>
+        <div class="what-we-do_links">
+          <a href="#" class="what-we-do__link">Learn more</a>
+          <img src="./src/assets/what-we-do/ic_arrow_forward_24px.svg" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -125,7 +135,7 @@
           <span class="our-client__logo">LOGO CLIENT 7</span>
         </div>
         <div class="our-client__item our-client__item--more">
-          <strong class="our-client__logo">More Client</strong>
+          <p class="our-client__logo">More Client</p>
         </div>
       </div>
     </div>
@@ -136,8 +146,9 @@
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__top">
+          <div class="footer__top--container">
           <div class="footer__info">
-            <h1 class="footer__info--title">Intersted to woek<br />with our team?</h1>
+            <p class="footer__info--title">Intersted to woek<br />with our team?</p>
             <p class="footer__info--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam.
@@ -146,6 +157,9 @@
           <div class="footer__cta--button">
             <button id="openModal">Let's Talk</button>
           </div>
+          </div>
+
+
         </div>
         <div class="footer__bottom">
           <div class="footer__grid">
@@ -196,28 +210,28 @@
   </footer>
   </div>
 
-<!-- Модалка -->
-<div class="modal-overlay" id="modal">
-  <div class="modal-content">
-    <button class="close-btn" id="closeModal">&times;</button>
-    <h2 class="modal__title">SEND US A MESSAGE</h2>
-    <form class="modal__form" id="contactForm">
-      <label>
-        Full Name
-        <input type="text" name="name" placeholder="Your name" required>
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" placeholder="Your email" required>
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="4" placeholder="Your message" required></textarea>
-      </label>
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
+  <!-- Модалка -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal">&times;</button>
+      <h2 class="modal__title">SEND US A MESSAGE</h2>
+      <form class="modal__form" id="contactForm">
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="Your email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        </label>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
   </div>
-</div>
 
 
   <div id="app"></div>
