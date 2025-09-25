@@ -55,6 +55,11 @@ min-width: 1000px;
 
 .footer__cta--button button {
   padding: 15px 74px;
+  transition: $hover-button-animation
+}
+
+.footer__cta--button button:hover {
+  background-color: $blue-01;
 }
 /* Нижняя часть футера */
 .footer__bottom {
@@ -160,13 +165,13 @@ min-width: 1000px;
 @media (max-width: 1100px) {
   .footer__top {
     flex-direction: column;
-    min-width: auto;
     padding: 20px 0;
+    min-width: auto;
   }
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 40px;
-    max-width: 90%;
+    max-width: 60%;
   }
   
   .footer__line {
@@ -174,7 +179,7 @@ min-width: 1000px;
   }
   .footer__bottom {
     padding-top: 20px;
-    min-width: auto;   
+    min-width: -webkit-fill-available;
     border-top: 1px solid #fff;
   }
   .footer__info--title {

@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Тестовое задание</title>
+  <script type="module" src="./src/ts/main.ts"></script>
 </head>
-
 <body>
   <!-- Header -->
   <header class="header">
@@ -32,7 +32,7 @@
           tristique vulputate ultrices ut mauris tellus at. Posuere
           sollicitudin odio tellus elit.
         </p>
-        <button class="hero-section__button">See Our Project</button>
+        <button class="hero-section__button button">See Our Project</button>
       </div>
       <div class="hero-section__illustration">
         <img src="./src/assets/hero/illustration.svg" alt="Hero Illustration" />
@@ -225,14 +225,10 @@
           Message
           <textarea name="message" rows="4" placeholder="Your message" required></textarea>
         </label>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button type="submit" class="modal__form--submit-btn button">Submit</button>
       </form>
     </div>
   </div>
-
-
   <div id="app"></div>
-  <script type="module" src="./src/ts/main.ts"></script>
 </body>
-
 </html>

@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeBtn.addEventListener("click", closeModal);
 
+
+  // Отправка данных
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     console.log("Форма сабмитится");
